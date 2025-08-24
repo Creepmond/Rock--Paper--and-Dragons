@@ -1,106 +1,122 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="">
   <head>
-    <title>
-      RPS Universe
-    </title>
+    
+    <title>Rock, Paper, and Dragons</title>
 
-    <link rel="stylesheet" href="rps.css">
+    <link rel="stylesheet" href="public/stylesheet/base.css">
+    
+    <script type="module" src="/src/main.js"></script>
   </head>
 
-
-
-  <body onload="play(0)">
-    <p class="title">You are in the Rock, Paper, Scissors Universe.</p>
+  <body>
 
 
 
-    <div class="hands">
-      <button onclick="
-        play(1, 'Rock')
-      ">
-        <img src="images/rock-emoji.png" class="hand-icon">
-      </button>
-
-      <button onmousedown="
-        play(2, 'Paper')
-      ">
-        <img src="images/paper-emoji.png" class="hand-icon">
-      </button>
-
-      <button onmousedown="
-        play(3, 'Scissors')
-      ">
-        <img src="images/scissors-emoji.png" class="hand-icon">
-      </button>
-    </div>
-
-
-    <p id="result">Nothing has happened yet...</p>
+    <div id="app"></div>
 
 
 
-    <div>
-      <span>
-        Wins:
-      </span>
-      <span id="wins" style="color:hsl(120, 100%, 70%); font-size:32px">
-        0
-      </span>   <span>|</span>
-
-
-      <span>
-        Losses:
-      </span>
-      <span id="losses" style="color:hsl(0, 100%, 70%); font-size:32px">
-        0
-      </span>   <span>|</span>
-
-
-      <span>
-        Ties:
-      </span>
-      <span id="ties" style="color:hsl(60, 100%, 70%); font-size:32px">
-        0
-      </span>
-    </div>
-
-
-    <div class="with-topmargin">
-      <span>
-        Total Games:
-      </span>
-      <span id="total-games" style="color:hsl(200, 100%, 50%); font-size:32px">
-        0
-      </span>
-    </div>
-
-
-    <div>
-      <span>
-        W/L Ratio: (
-      </span>
-      <span id="winloss-ratio" style="color:hsl(200, 100%, 50%); font-size:32px">
-        N/A
-      </span>
-      <span>
-        )
-      </span>
-    </div>
-
-    <button class="with-topmargin" onclick="
-      results.wins = 0;
-      results.losses = 0;
-      results.ties = 0;
-      localStorage.removeItem('results');
-      play(0)
-    ">
-      Reset Score
-    </button>
-
-
-    
-    <script src="rps.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="hands">
+  <button onclick="
+    play(1, 'Rock')
+  ">
+    <img src="images/rock-emoji.png" class="hand-icon">
+  </button>
+
+  <button onmousedown="
+    play(2, 'Paper')
+  ">
+    <img src="images/paper-emoji.png" class="hand-icon">
+  </button>
+
+  <button onmousedown="
+    play(3, 'Scissors')
+  ">
+    <img src="images/scissors-emoji.png" class="hand-icon">
+  </button>
+</div>
+
+
+<p id="result">Nothing has happened yet...</p>
+
+
+
+<div>
+  <span>
+    Wins:
+  </span>
+  <span id="wins" style="color:hsl(120, 100%, 70%); font-size:32px">
+    0
+  </span>   <span>|</span>
+
+
+  <span>
+    Losses:
+  </span>
+  <span id="losses" style="color:hsl(0, 100%, 70%); font-size:32px">
+    0
+  </span>   <span>|</span>
+
+
+  <span>
+    Ties:
+  </span>
+  <span id="ties" style="color:hsl(60, 100%, 70%); font-size:32px">
+    0
+  </span>
+</div>
+
+
+<div class="with-topmargin">
+  <span>
+    Total Games:
+  </span>
+  <span id="total-games" style="color:hsl(200, 100%, 50%); font-size:32px">
+    0
+  </span>
+</div>
+
+
+<div>
+  <span>
+    W/L Ratio: (
+  </span>
+  <span id="winloss-ratio" style="color:hsl(200, 100%, 50%); font-size:32px">
+    N/A
+  </span>
+  <span>
+    )
+  </span>
+</div>
+
+<button class="with-topmargin" onclick="
+  results.wins = 0;
+  results.losses = 0;
+  results.ties = 0;
+  localStorage.removeItem('results');
+  play(0)
+">
+  Reset Score
+</button>
+
+  </body>
+</html>-->
