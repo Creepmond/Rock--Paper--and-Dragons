@@ -4,7 +4,7 @@ body {
   background-color: rgb(10, 2, 27);
 }
 
-h1, h2, h3, h4, h5, h6, p,
+p,
 div,
 span {
   color: white;
@@ -16,13 +16,15 @@ span {
 
 p,
 div,
-span {
-  font-size: 25px;
+span,
+input,
+button {
+  font-size: 20px;
 }
 
 input,
 button {
-  padding: none;
+  padding: 0;
   border: none;
   outline: none;
 }
