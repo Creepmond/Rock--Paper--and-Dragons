@@ -1,9 +1,16 @@
 <script>
 
+import HandButton from './HandButton.vue';
+
 import { randomIntegerRange } from '@/core/random.js';
 
 export default {
   data() { return {
+    handType: [
+      'Rock',
+      'Paper',
+      'Scissors'
+    ],
     hand: 0,
     botHand: 0,
     result: 0,
@@ -15,6 +22,9 @@ export default {
       wl_ratio: 0.5
     }
   }},
+  components: {
+    HandButton,
+  },
   computed: {
     resultMessage() {
       const hand = translate(this.hand);
@@ -70,9 +80,11 @@ function translate(hand) {
 
 
 <template>
-  <button @click="playHand(1)">Rock</button>
-  <button @mousedown="playHand(2)">Paper</button>
-  <button @mousedown="playHand(3)">Scissors</button>
+  <HandButton
+    v-for="(type, index) of handType"
+    :handType="type"
+    @click="playHand(index+1)"
+  />
 
   <div class="result">{{ resultMessage }}</div>
 

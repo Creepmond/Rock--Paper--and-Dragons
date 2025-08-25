@@ -1,0 +1,30 @@
+:root {
+  --color-rock: #6a7b8c;
+  --color-paper: #f5e0b7;
+  --color-scissors: #a82d27;
+
+  --opaque-color-rock: #6a7b8c88;
+  --opaque-color-paper: #f5e0b788;
+  --opaque-color-scissors: #c7362f66;
+}
+
+.play-hand-btn.rock {
+  color: var(--color-rock);
+
+  box-shadow: 0 0 15px var(--opaque-color-rock);
+  text-shadow: 0 0 2px var(--color-rock);
+}
+
+.play-hand-btn.paper {
+  color: var(--color-paper);
+
+  box-shadow: 0 0 15px var(--opaque-color-paper);
+  text-shadow: 0 0 2px var(--color-paper);
+}
+
+.play-hand-btn.scissors {
+  color: var(--color-scissors);
+
+  box-shadow: 0 0 15px var(--opaque-color-scissors);
+  text-shadow: 0 0 2px var(--color-scissors);
+}
