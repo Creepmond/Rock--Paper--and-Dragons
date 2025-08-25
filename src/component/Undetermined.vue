@@ -1,15 +1,17 @@
 <script>
 
-import HandButton from './HandButton.vue';
+import HandButton from '@/component/HandButton.vue'
+import HandCooldown from '@/component/HandCooldown.vue'
+import ResultStat from '@/component/ResultStat.vue'
 
-import { randomIntegerRange } from '@/core/random.js';
+import { tickrate } from '../config.js'
 
 export default {
   data() { return {
     handType: [
       'Rock',
       'Paper',
-      'Scissors'
+      'Scissors',
     ],
     hand: 0,
     botHand: 0,
@@ -19,13 +21,19 @@ export default {
       lose: 0,
       tie: 0,
       total_games: 0,
-      wl_ratio: 0.5
-    }
+      wl_ratio: 0.5,
+    },
+    cooldown: 0,
   }},
   components: {
     HandButton,
+    HandCooldown,
+    ResultStat,
   },
   computed: {
+    onCooldown() {
+      return this.cooldown > 0;
+    },
     resultMessage() {
       const hand = translate(this.hand);
       const botHand = translate(this.botHand);
@@ -39,9 +47,6 @@ export default {
         case 1: return `You played ${hand}. Bot played ${botHand}. You won!`;
       }
     },
-    wl_ratioPercent() {
-      return `${this.stat.wl_ratio * 100}%`;
-    }
   },
   methods: {
     playHand(hand) {
@@ -63,8 +68,22 @@ export default {
 
       this.stat.total_games++;
       this.stat.wl_ratio = ( this.stat.win + ( 0.5*this.stat.tie )) / this.stat.total_games;
+      this.cooldown = 4;
+      this.elapseCooldown()
     },
-  }
+    elapseCooldown() {
+      const func = () => {this.cooldown -= 1 / tickrate};
+      const interval = 1000 / tickrate;
+
+      setTimeout(() => tick(), interval)
+      const tick = () => {
+        func()
+
+        if (this.cooldown > 0)
+          setTimeout(() => tick(), interval)
+      }
+    },
+  },
 }
 
 function translate(hand) {
@@ -80,44 +99,24 @@ function translate(hand) {
 
 
 <template>
-  <HandButton
-    v-for="(type, index) of handType"
-    :handType="type"
-    @click="playHand(index+1)"
+  <div class="hand-buttons">
+    <HandButton
+      v-for="(type, index) of handType"
+      :disabled="onCooldown"
+      :hand-type="type"
+      @click="playHand(index+1)"
+    />
+  </div>
+
+  <HandCooldown 
+    :cooldown="cooldown"
   />
 
   <div class="result">{{ resultMessage }}</div>
 
-  <div class="stat">
-    <div>
-      Wins:
-      <span class="win">
-        {{ stat.win }}
-      </span>
-      |
-      Losses:
-      <span class="lose">
-        {{ stat.lose }}
-      </span>
-      |
-      Ties:
-      <span class="tie">
-        {{ stat.tie }}
-      </span> 
-    </div>
-    <div>
-      Total Games:
-      <span class="total-games">
-        {{ stat.total_games }}
-      </span>
-    </div>
-    <div>
-      W/L Ratio:
-      <span class="wl-ratio">
-        {{ wl_ratioPercent }}
-      </span> 
-    </div>
-  </div>
+  <ResultStat
+    :stat="stat"
+  />
 </template>
 
 

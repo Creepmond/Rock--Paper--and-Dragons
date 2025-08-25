@@ -1,3 +1,3 @@
-export function randomIntegerRange(min, max) {
+window.randomIntegerRange = function(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }

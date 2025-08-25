@@ -1,7 +1,9 @@
 <script>
 
 export default {
-  props: ['handType'],
+  props: {
+    handType: String,
+  },
 }
 
 </script>
@@ -27,13 +29,18 @@ export default {
   border-radius: 50%;
   outline: 2px solid white;
 
-  transition: box-shadow 0.15s, opacity 0.1s;
+  transition: box-shadow 0.15s, opacity 0.05s;
 }
-.play-hand-btn:hover {
-  box-shadow: 0 0 30px;
+
+.play-hand-btn:hover:not(.play-hand-btn[disabled]) {
+  box-shadow: 0 0 25px;
 }
-.play-hand-btn:active {
-  opacity: 0.8;
+
+.play-hand-btn[disabled] {
+  cursor: default;
+
+  box-shadow: u;
+  opacity: 0.5;
 }
 
 </style>
