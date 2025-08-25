@@ -1,8 +1,34 @@
+/*/ Tags */
+
 body {
   background-color: rgb(10, 2, 27);
+}
+
+h1, h2, h3, h4, h5, h6, p,
+div,
+span {
   color: white;
-  font-size: 25px;
 
   font-family: Helvetica, Arial, Sans-serif;
-  margin-left:25px;
+
+  margin: 0;
 }
+
+p,
+div,
+span {
+  font-size: 25px;
+}
+
+input,
+button {
+  padding: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*/ END - Tags */
