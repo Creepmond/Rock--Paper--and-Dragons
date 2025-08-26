@@ -1,11 +1,9 @@
 <script>
-
 export default {
   props: {
     handType: String,
   },
 }
-
 </script>
 
 <template>
@@ -15,7 +13,6 @@ export default {
 </template>
 
 <style>
-
 .play-hand-btn {
   background: none;
   color: white;
@@ -29,7 +26,9 @@ export default {
   border-radius: 50%;
   outline: 2px solid white;
 
-  transition: box-shadow 0.15s, opacity 0.05s;
+  transition:
+    box-shadow 0.15s,
+    opacity 0.05s;
 }
 
 .play-hand-btn:hover:not(.play-hand-btn[disabled]) {
@@ -42,5 +41,4 @@ export default {
   box-shadow: u;
   opacity: 0.5;
 }
-
 </style>

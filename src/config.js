@@ -1,1 +1,1 @@
-export const tickrate = 60;
+export const tickrate = 60

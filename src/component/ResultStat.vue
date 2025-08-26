@@ -1,32 +1,28 @@
 <script>
-
 export default {
   props: {
     stat: Object,
   },
   computed: {
     wl_ratioPercent() {
-      return `${this.stat.wl_ratio * 100}%`;
+      return `${this.stat.wl_ratio * 100}%`
     },
   },
 }
-
 </script>
 
-<template> 
+<template>
   <div class="stat">
     <div>
       Wins:
       <span class="win">
         {{ stat.win }}
       </span>
-      |
-      Ties:
+      | Ties:
       <span class="tie">
         {{ stat.tie }}
-      </span> 
-      |
-      Losses:
+      </span>
+      | Losses:
       <span class="lose">
         {{ stat.lose }}
       </span>
@@ -41,7 +37,7 @@ export default {
       W/L Ratio:
       <span class="wl-ratio">
         {{ wl_ratioPercent }}
-      </span> 
+      </span>
     </div>
   </div>
-</template> 
+</template>

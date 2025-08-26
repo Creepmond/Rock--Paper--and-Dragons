@@ -6,25 +6,22 @@
  * @param {number} interval - Every (milliseconds) this function would be 'performed'.
  * @param {Function} func - The function to be called.
  */
-window.conditionalInterval = function(condition, interval = 1000, func) {
-  if (typeof func !== 'function')
-    throw new Error('Passed argument is not a function.');
+window.conditionalInterval = function (condition, interval = 1000, func) {
+  if (typeof func !== 'function') throw new Error('Passed argument is not a function.')
 
-  let expectedNextTick = Date.now() + interval;
+  let expectedNextTick = Date.now() + interval
 
-  setTimeout(() => tick(func), interval);
+  setTimeout(() => tick(func), interval)
 
   ////tick(func) = () => {
   function tick(func) {
-    let drift = Date.now() - expectedNextTick;
-    if (drift > interval)
-      throw new Error("I stole this code I don't know what happened either");
+    let drift = Date.now() - expectedNextTick
+    if (drift > interval) throw new Error("I stole this code I don't know what happened either")
 
-    func();
+    func()
 
-    expectedNextTick += interval;
+    expectedNextTick += interval
 
-    if (condition)
-      setTimeout(() => tick(func), interval - drift);
-  };
-};
+    if (condition) setTimeout(() => tick(func), interval - drift)
+  }
+}
