@@ -1,8 +1,8 @@
 import {promisify} from 'node:util';
 import process from 'node:process';
 import {execFile} from 'node:child_process';
-import defaultBrowserId from 'default-browser-id';
-import bundleName from 'bundle-name';
+import defaultBrowserId from '../default-browser-id/index.js';
+import bundleName from '../bundle-name/index.js';
 import windows from './windows.js';
 
 const execFileAsync = promisify(execFile);

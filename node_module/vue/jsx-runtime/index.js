@@ -1,4 +1,4 @@
-const { h, Fragment } = require('vue')
+const { h, Fragment } = require('..')
 
 function jsx(type, props, key) {
   const { children } = props

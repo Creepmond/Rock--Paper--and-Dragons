@@ -1,8 +1,8 @@
 const fs = require('node:fs');
 const { join, normalize, resolve } = require('node:path');
-const { totalist } = require('totalist/sync');
-const { parse } = require('@polka/url');
-const { lookup } = require('mrmime');
+const { totalist } = require('../totalist/sync');
+const { parse } = require('../@polka/url');
+const { lookup } = require('../mrmime');
 
 const noop = () => {};
 

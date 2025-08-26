@@ -1,4 +1,4 @@
-import isPlainObject from 'is-plain-obj';
+import isPlainObject from '../../../is-plain-obj/index.js';
 import {safeNormalizeFileUrl} from '../arguments/file-url.js';
 
 // The command `arguments` and `options` are both optional.

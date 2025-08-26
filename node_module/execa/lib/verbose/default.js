@@ -1,10 +1,10 @@
-import figures from 'figures';
+import figures from '../../../figures';
 import {
 	gray,
 	bold,
 	redBright,
 	yellowBright,
-} from 'yoctocolors';
+} from '../../../yoctocolors';
 
 // Default when `verbose` is not a function
 export const defaultVerboseFunction = ({

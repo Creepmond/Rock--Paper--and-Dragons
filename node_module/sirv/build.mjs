@@ -1,8 +1,8 @@
 import * as fs from 'node:fs';
 import { join, normalize, resolve } from 'node:path';
-import { totalist } from 'totalist/sync';
-import { parse } from '@polka/url';
-import { lookup } from 'mrmime';
+import { totalist } from '../totalist/sync';
+import { parse } from '../@polka/url';
+import { lookup } from '../mrmime';
 
 const noop = () => {};
 

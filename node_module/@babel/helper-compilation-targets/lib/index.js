@@ -41,16 +41,16 @@ Object.defineProperty(exports, "unreleasedLabels", {
     return _targets.unreleasedLabels;
   }
 });
-var _browserslist = require("browserslist");
+var _browserslist = require("../../../browserslist/index.js");
 var _helperValidatorOption = require("@babel/helper-validator-option");
-var _lruCache = require("lru-cache");
+var _lruCache = require("../../../lru-cache/index.js");
 var _utils = require("./utils.js");
 var _targets = require("./targets.js");
 var _options = require("./options.js");
 var _pretty = require("./pretty.js");
 var _debug = require("./debug.js");
 var _filterItems = require("./filter-items.js");
-const browserModulesData = require("@babel/compat-data/native-modules");
+const browserModulesData = require("../../compat-data/native-modules.js");
 const ESM_SUPPORT = browserModulesData["es6.module"];
 const v = new _helperValidatorOption.OptionValidator("@babel/helper-compilation-targets");
 function validateTargetNames(targets) {

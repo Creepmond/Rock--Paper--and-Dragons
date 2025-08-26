@@ -7,7 +7,7 @@ exports.parse = void 0;
 exports.parseAsync = parseAsync;
 exports.parseSync = parseSync;
 function _gensync() {
-  const data = require("gensync");
+  const data = require("../../../gensync/index.js");
   _gensync = function () {
     return data;
   };

@@ -4,7 +4,7 @@ const isWindows = process.platform === 'win32' ||
 
 const path = require('path')
 const COLON = isWindows ? ';' : ':'
-const isexe = require('isexe')
+const isexe = require('../isexe')
 
 const getNotFoundError = (cmd) =>
   Object.assign(new Error(`not found: ${cmd}`), { code: 'ENOENT' })

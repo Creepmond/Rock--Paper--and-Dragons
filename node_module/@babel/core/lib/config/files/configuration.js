@@ -38,7 +38,7 @@ function _json() {
   return data;
 }
 function _gensync() {
-  const data = require("gensync");
+  const data = require("../../../../../gensync/index.js");
   _gensync = function () {
     return data;
   };

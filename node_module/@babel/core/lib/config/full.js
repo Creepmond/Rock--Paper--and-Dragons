@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 function _gensync() {
-  const data = require("gensync");
+  const data = require("../../../../gensync/index.js");
   _gensync = function () {
     return data;
   };

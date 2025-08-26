@@ -1,6 +1,6 @@
 'use strict'
 
-let { nanoid } = require('nanoid/non-secure')
+let { nanoid } = require('../../nanoid/non-secure')
 let { isAbsolute, resolve } = require('path')
 let { SourceMapConsumer, SourceMapGenerator } = require('source-map-js')
 let { fileURLToPath, pathToFileURL } = require('url')

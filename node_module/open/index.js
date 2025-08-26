@@ -5,10 +5,10 @@ import {fileURLToPath} from 'node:url';
 import {promisify} from 'node:util';
 import childProcess from 'node:child_process';
 import fs, {constants as fsConstants} from 'node:fs/promises';
-import {isWsl, powerShellPath} from 'wsl-utils';
-import defineLazyProperty from 'define-lazy-prop';
-import defaultBrowser from 'default-browser';
-import isInsideContainer from 'is-inside-container';
+import {isWsl, powerShellPath} from '../wsl-utils';
+import defineLazyProperty from '../define-lazy-prop';
+import defaultBrowser from '../default-browser';
+import isInsideContainer from '../is-inside-container';
 
 const execFile = promisify(childProcess.execFile);
 

@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import isDocker from 'is-docker';
+import isDocker from '../is-docker';
 
 let cachedResult;
 

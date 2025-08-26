@@ -1,5 +1,5 @@
 import {inspect} from 'node:util';
-import stripFinalNewline from 'strip-final-newline';
+import stripFinalNewline from '../../../strip-final-newline/index.js';
 import {isUint8Array, uint8ArrayToString} from '../utils/uint-array.js';
 import {fixCwdError} from '../arguments/cwd.js';
 import {escapeLines} from '../arguments/escape.js';

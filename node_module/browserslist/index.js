@@ -1,6 +1,6 @@
 var jsReleases = require('node-releases/data/processed/envs.json')
-var agents = require('caniuse-lite/dist/unpacker/agents').agents
-var e2c = require('electron-to-chromium/versions')
+var agents = require('../caniuse-lite/dist/unpacker/agents').agents
+var e2c = require('../electron-to-chromium/versions')
 var jsEOL = require('node-releases/data/release-schedule/release-schedule.json')
 var path = require('path')
 

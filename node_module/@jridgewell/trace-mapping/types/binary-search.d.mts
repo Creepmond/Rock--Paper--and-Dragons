@@ -1,4 +1,4 @@
-import type { SourceMapSegment, ReverseSegment } from './sourcemap-segment.mts';
+import type { SourceMapSegment, ReverseSegment } from './sourcemap-segment.d.mts';
 export type MemoState = {
     lastKey: number;
     lastNeedle: number;

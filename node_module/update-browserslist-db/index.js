@@ -1,5 +1,5 @@
 let { execSync } = require('child_process')
-let escalade = require('escalade/sync')
+let escalade = require('../escalade/sync')
 let { existsSync, readFileSync, writeFileSync } = require('fs')
 let { join } = require('path')
 let pico = require('picocolors')
@@ -88,7 +88,7 @@ function getLatestInfo(lock) {
 }
 
 function getBrowsers() {
-  let browserslist = require('browserslist')
+  let browserslist = require('../browserslist')
   return browserslist().reduce((result, entry) => {
     if (!result[entry[0]]) {
       result[entry[0]] = []

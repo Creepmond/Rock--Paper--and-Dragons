@@ -1,5 +1,5 @@
 import {once} from 'node:events';
-import {isStream as isNodeStream} from 'is-stream';
+import {isStream as isNodeStream} from '../../../is-stream/index.js';
 import {throwOnTimeout} from '../terminate/timeout.js';
 import {throwOnCancel} from '../terminate/cancel.js';
 import {throwOnGracefulCancel} from '../terminate/graceful.js';

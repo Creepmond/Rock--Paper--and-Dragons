@@ -1,5 +1,5 @@
 'use strict';
-const shebangRegex = require('shebang-regex');
+const shebangRegex = require('../shebang-regex');
 
 module.exports = (string = '') => {
 	const match = string.match(shebangRegex);

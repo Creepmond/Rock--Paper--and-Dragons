@@ -3,7 +3,7 @@ import {
 	isStream as isNodeStream,
 	isReadableStream as isNodeReadableStream,
 	isWritableStream as isNodeWritableStream,
-} from 'is-stream';
+} from '../../../is-stream/index.js';
 import {isWritableStream} from './type.js';
 
 // For `stdio[fdNumber]` beyond stdin/stdout/stderr, we need to guess whether the value passed is intended for inputs or outputs.

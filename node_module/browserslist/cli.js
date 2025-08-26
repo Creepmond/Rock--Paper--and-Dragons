@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 var fs = require('fs')
-var updateDb = require('update-browserslist-db')
+var updateDb = require('../update-browserslist-db')
 
-var browserslist = require('./')
+var browserslist = require('.')
 var pkg = require('./package.json')
 
 var args = process.argv.slice(2)

@@ -53,7 +53,7 @@ var Lazy = require("./lazy-modules.js");
 var _dynamicImport = require("./dynamic-import.js");
 var _getModuleName = require("./get-module-name.js");
 {
-  exports.getDynamicImportSource = require("./dynamic-import").getDynamicImportSource;
+  exports.getDynamicImportSource = require("./dynamic-import.js").getDynamicImportSource;
 }
 function rewriteModuleStatementsAndPrepareHeader(path, {
   exportName,

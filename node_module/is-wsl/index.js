@@ -1,7 +1,7 @@
 import process from 'node:process';
 import os from 'node:os';
 import fs from 'node:fs';
-import isInsideContainer from 'is-inside-container';
+import isInsideContainer from '../is-inside-container';
 
 const isWsl = () => {
 	if (process.platform !== 'linux') {

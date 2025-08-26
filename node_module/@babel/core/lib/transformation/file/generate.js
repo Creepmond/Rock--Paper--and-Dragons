@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = generateCode;
 function _convertSourceMap() {
-  const data = require("convert-source-map");
+  const data = require("../../../../../convert-source-map/index.js");
   _convertSourceMap = function () {
     return data;
   };

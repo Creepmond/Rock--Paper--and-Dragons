@@ -1,4 +1,4 @@
-import parseMilliseconds from 'parse-ms';
+import parseMilliseconds from '../parse-ms';
 
 const isZero = value => value === 0 || value === 0n;
 const pluralize = (word, count) => (count === 1 || count === 1n) ? word : `${word}s`;

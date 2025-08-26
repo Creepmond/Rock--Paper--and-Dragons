@@ -1,5 +1,5 @@
 import {finished} from 'node:stream/promises';
-import mergeStreams from '@sindresorhus/merge-streams';
+import mergeStreams from '../../../@sindresorhus/merge-streams/index.js';
 import {incrementMaxListeners} from '../utils/max-listeners.js';
 import {pipeStreams} from '../io/pipeline.js';
 

@@ -1,4 +1,4 @@
-import isUnicodeSupported from 'is-unicode-supported';
+import isUnicodeSupported from '../is-unicode-supported';
 
 const common = {
 	circleQuestionMark: '(?)',

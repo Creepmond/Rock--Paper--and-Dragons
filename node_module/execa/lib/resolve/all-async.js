@@ -1,4 +1,4 @@
-import mergeStreams from '@sindresorhus/merge-streams';
+import mergeStreams from '../../../@sindresorhus/merge-streams/index.js';
 import {waitForSubprocessStream} from './stdio.js';
 
 // `all` interleaves `stdout` and `stderr`

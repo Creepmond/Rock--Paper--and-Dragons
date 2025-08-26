@@ -8,7 +8,7 @@ exports.isRequired = isRequired;
 exports.targetsSupported = targetsSupported;
 var _semver = require("semver");
 var _utils = require("./utils.js");
-const pluginsCompatData = require("@babel/compat-data/plugins");
+const pluginsCompatData = require("../../compat-data/plugins.js");
 function targetsSupported(target, support) {
   const targetEnvironments = Object.keys(target);
   if (targetEnvironments.length === 0) {

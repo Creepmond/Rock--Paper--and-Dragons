@@ -1,6 +1,6 @@
 import {readFileSync} from 'node:fs';
 import tty from 'node:tty';
-import {isStream as isNodeStream} from 'is-stream';
+import {isStream as isNodeStream} from '../../../is-stream/index.js';
 import {STANDARD_STREAMS} from '../utils/standard-stream.js';
 import {bufferToUint8Array} from '../utils/uint-array.js';
 import {serializeOptionValue} from '../arguments/fd-options.js';

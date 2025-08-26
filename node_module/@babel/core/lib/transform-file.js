@@ -7,7 +7,7 @@ exports.transformFile = transformFile;
 exports.transformFileAsync = transformFileAsync;
 exports.transformFileSync = transformFileSync;
 function _gensync() {
-  const data = require("gensync");
+  const data = require("../../../gensync/index.js");
   _gensync = function () {
     return data;
   };

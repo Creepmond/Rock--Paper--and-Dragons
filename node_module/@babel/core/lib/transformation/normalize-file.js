@@ -33,7 +33,7 @@ function _t() {
   return data;
 }
 function _convertSourceMap() {
-  const data = require("convert-source-map");
+  const data = require("../../../../convert-source-map/index.js");
   _convertSourceMap = function () {
     return data;
   };

@@ -1,4 +1,4 @@
-import isPlainObject from 'is-plain-obj';
+import isPlainObject from '../../../is-plain-obj/index.js';
 import {FD_SPECIFIC_OPTIONS} from '../arguments/specific.js';
 
 // Deep merge specific options like `env`. Shallow merge the other ones.

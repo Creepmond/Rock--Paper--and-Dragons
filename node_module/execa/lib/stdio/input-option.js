@@ -1,4 +1,4 @@
-import {isReadableStream} from 'is-stream';
+import {isReadableStream} from '../../../is-stream/index.js';
 import {isUint8Array} from '../utils/uint-array.js';
 import {isUrl, isFilePathString} from './type.js';
 

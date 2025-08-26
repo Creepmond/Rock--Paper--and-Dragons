@@ -1,6 +1,6 @@
 /* eslint-disable new-cap */
 
-import * as Vue from 'vue'
+import * as Vue from '../../vue'
 import App from 'virtual:vue-inspector-path:Overlay.vue'
 import inspectorOptions from 'virtual:vue-inspector-options'
 const CONTAINER_ID = 'vue-inspector-container'

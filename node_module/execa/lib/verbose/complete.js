@@ -1,4 +1,4 @@
-import prettyMs from 'pretty-ms';
+import prettyMs from '../../../pretty-ms/index.js';
 import {isVerbose} from './values.js';
 import {verboseLog} from './log.js';
 import {logError} from './error.js';

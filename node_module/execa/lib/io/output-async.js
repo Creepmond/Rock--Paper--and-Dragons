@@ -1,4 +1,4 @@
-import mergeStreams from '@sindresorhus/merge-streams';
+import mergeStreams from '../../../@sindresorhus/merge-streams/index.js';
 import {isStandardStream} from '../utils/standard-stream.js';
 import {incrementMaxListeners} from '../utils/max-listeners.js';
 import {TRANSFORM_TYPES} from '../stdio/type.js';

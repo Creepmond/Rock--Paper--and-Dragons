@@ -19,7 +19,7 @@ exports.loadPartialConfig = loadPartialConfig;
 exports.loadPartialConfigAsync = loadPartialConfigAsync;
 exports.loadPartialConfigSync = loadPartialConfigSync;
 function _gensync() {
-  const data = require("gensync");
+  const data = require("../../../../gensync/index.js");
   _gensync = function () {
     return data;
   };

@@ -7,7 +7,7 @@ exports.createCachedDescriptors = createCachedDescriptors;
 exports.createDescriptor = createDescriptor;
 exports.createUncachedDescriptors = createUncachedDescriptors;
 function _gensync() {
-  const data = require("gensync");
+  const data = require("../../../../gensync/index.js");
   _gensync = function () {
     return data;
   };

@@ -12,7 +12,7 @@ function _fs() {
   return data;
 }
 function _gensync() {
-  const data = require("gensync");
+  const data = require("../../../../gensync");
   _gensync = function () {
     return data;
   };

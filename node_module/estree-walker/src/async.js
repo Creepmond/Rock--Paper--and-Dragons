@@ -2,7 +2,7 @@
 import { WalkerBase } from './walker.js';
 
 /** @typedef { import('estree').BaseNode} BaseNode */
-/** @typedef { import('./walker').WalkerContext} WalkerContext */
+/** @typedef { import('./walker.js').WalkerContext} WalkerContext */
 
 /** @typedef {(
  *    this: WalkerContext,

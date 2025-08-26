@@ -1,4 +1,4 @@
-import stripFinalNewlineFunction from 'strip-final-newline';
+import stripFinalNewlineFunction from '../../../strip-final-newline';
 
 // Apply `stripFinalNewline` option, which applies to `result.stdout|stderr|all|stdio[*]`.
 // If the `lines` option is used, it is applied on each line, but using a different function.

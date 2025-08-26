@@ -1,5 +1,5 @@
 import {debuglog} from 'node:util';
-import isPlainObject from 'is-plain-obj';
+import isPlainObject from '../../../is-plain-obj/index.js';
 import {STANDARD_STREAMS_ALIASES} from '../utils/standard-stream.js';
 
 // Some options can have different values for `stdout`/`stderr`/`fd3`.

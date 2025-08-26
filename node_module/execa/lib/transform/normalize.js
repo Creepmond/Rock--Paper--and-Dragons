@@ -1,4 +1,4 @@
-import isPlainObj from 'is-plain-obj';
+import isPlainObj from '../../../is-plain-obj/index.js';
 import {BINARY_ENCODINGS} from '../arguments/encoding-option.js';
 import {TRANSFORM_TYPES} from '../stdio/type.js';
 import {getTransformObjectModes} from './object-mode.js';

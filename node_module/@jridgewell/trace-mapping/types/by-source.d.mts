@@ -1,5 +1,5 @@
-import type { ReverseSegment, SourceMapSegment } from './sourcemap-segment.mts';
-import type { MemoState } from './binary-search.mts';
+import type { ReverseSegment, SourceMapSegment } from './sourcemap-segment.d.mts';
+import type { MemoState } from './binary-search.d.mts';
 export type Source = {
     __proto__: null;
     [line: number]: Exclude<ReverseSegment, [number]>[];

@@ -1,4 +1,4 @@
-import {isReadableStream} from 'is-stream';
+import {isReadableStream} from '../../is-stream';
 import {asyncIterator} from '@sec-ant/readable-stream/ponyfill';
 
 export const getAsyncIterable = stream => {

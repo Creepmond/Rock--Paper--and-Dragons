@@ -1,6 +1,6 @@
 import process from 'node:process';
 import fs, {constants as fsConstants} from 'node:fs/promises';
-import isWsl from 'is-wsl';
+import isWsl from '../is-wsl';
 
 export const wslDrivesMountPoint = (() => {
 	// Default value for "root" param
@@ -54,4 +54,4 @@ export const powerShellPath = async () => {
 	return `${process.env.SYSTEMROOT || process.env.windir || String.raw`C:\Windows`}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`;
 };
 
-export {default as isWsl} from 'is-wsl';
+export {default as isWsl} from '../is-wsl';

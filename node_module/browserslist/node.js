@@ -1,5 +1,5 @@
-var feature = require('caniuse-lite/dist/unpacker/feature').default
-var region = require('caniuse-lite/dist/unpacker/region').default
+var feature = require('../caniuse-lite/dist/unpacker/feature').default
+var region = require('../caniuse-lite/dist/unpacker/region').default
 var fs = require('fs')
 var path = require('path')
 

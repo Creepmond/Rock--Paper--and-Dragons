@@ -1,5 +1,5 @@
-import {isStream as isNodeStream, isDuplexStream} from 'is-stream';
-import isPlainObj from 'is-plain-obj';
+import {isStream as isNodeStream, isDuplexStream} from '../../../is-stream/index.js';
+import isPlainObj from '../../../is-plain-obj/index.js';
 import {isUint8Array} from '../utils/uint-array.js';
 
 // The `stdin`/`stdout`/`stderr` option can be of many types. This detects it.

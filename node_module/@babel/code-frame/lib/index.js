@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var picocolors = require('picocolors');
-var jsTokens = require('js-tokens');
+var jsTokens = require('../../../js-tokens');
 var helperValidatorIdentifier = require('@babel/helper-validator-identifier');
 
 function isColorSupported() {
